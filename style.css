@@ -1,0 +1,415 @@
+body {
+
+    margin: 0;
+    background-color: #252525;
+    height: 100vh;
+}
+
+#nav{
+    height: auto;
+    background-color: #af02f5;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    top: 0;
+    left: 0;
+    position: fixed;
+    align-items: center;
+    box-sizing: border-box;
+    transition: 0.5s;
+    padding: 0 5%;
+    justify-content: space-between;
+}
+
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    background-color: #741998;
+    color: #ffffff;
+    border-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #531356;
+    transition: 0.3s;
+}
+
+.btn:active {
+    background-color: #af02f5;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+#content-home {
+    height: 90vh;
+    padding: 8rem 0 0 0 ;
+}
+
+#content-title {
+    display: block;
+    text-align: center;
+    font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#title-1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color:#d269fc;
+    font-size: 3.5rem;
+    text-shadow: 0 0 30px #af02f5;
+}
+
+#title-2 {
+    margin-top: 0;
+    color: #fd98f6;
+    text-shadow: 0 0 30px#f502e4;
+    font-size: 5rem;
+    margin-bottom: 0;
+}
+
+#logo-gato {
+    width: 38%;
+    margin: 0 auto;
+    align-items: center;
+    align-content: center;
+    display: flex;
+}
+
+
+#content-my-perfil {
+    height: 90vh;
+    margin-top: 12rem;
+    text-align: center;
+    padding: 15rem 0 0 0;
+    display: block;
+}
+
+#me-img {
+    width: 34%;
+    margin-bottom: 2rem;
+}
+
+#about-me {
+    background-color:#4e01e6;
+    margin: 0 auto;
+    padding: 1rem 3refm;
+    width: 50%;
+    border-radius: 21px;
+    align-items: center;
+    align-content: center;
+    
+}
+
+#text-about-me {
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 17px;
+}
+
+#skills {
+    font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+#title-skills {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+#language-project {
+    text-align: center;
+    margin: 2rem;
+}
+
+.html {
+    font-size: 15px;
+    font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #af02f5;
+  color: #ffffff;
+  width: 6rem;
+  height: 2rem;
+  text-align: center;
+  border-color: transparent;
+  border-radius: 48px;
+  margin: 0 5rem 0 0;
+  cursor: pointer;
+}
+
+.html:hover {
+
+    background-color: rgba(0, 0, 0, 0.062);
+    transition: 0.3s;
+    border: 1px solid;
+    border-color: #af02f5;
+}
+
+.html:active {
+    background-color: #4e01e6;
+    transition: 0.3s;
+}
+
+.css {
+    font-size: 15px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #af02f5;
+    color: #ffffff;
+    width: 6rem;
+    height: 2rem;
+    text-align: center;
+    border-color: transparent;
+    border-radius: 48px;
+    cursor: pointer;
+}
+
+.css:hover {
+
+    background-color: rgba(0, 0, 0, 0.062);
+    transition: 0.3s;
+    border: 1px solid;
+    border-color: #af02f5;
+}
+
+.css:active {
+    background-color: #4e01e6;
+    transition: 0.3s;
+}
+
+#my-projects{
+    text-align: justify;
+    margin: auto;
+    margin-top: 5rem;
+    padding: 4rem 6rem 2rem 6rem;
+}
+
+#title-project {
+    font-size: 2rem;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #f502e4;
+    align-items: center;
+    margin-left: 1rem;
+
+}
+
+.my-project-1 {
+    background-color: #4a4a4a;
+    padding: 5px 10px;
+    border-radius: 22px;
+    margin: 0 1rem 5rem 1rem;
+    height: 12rem;
+    display: flex;
+}
+
+.title-project {
+    color: #ffffff;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+.text-project {
+    color: #ffffff;
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 10px 0;
+    background-color: #b002f534;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    align-content: center;
+    border-radius: 17px;
+}
+
+
+.links-project{
+    display: flex;
+    margin: 1rem 0;
+}
+
+.link-github {
+    font-size: 13px;
+    font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #4a4a4a;
+  color: #f502e4;
+  width: 7rem;
+  height: 2rem;
+  text-align: center;
+  border: 2px solid;
+  border-color: #f502e4;
+  border-radius: 15px;
+  margin: 0 4rem 0 0;
+}
+
+.link-github:hover{
+    background-color: #252525;
+    transition: 0.3s;
+    border: 2px solid;
+    border-color: rgb(166, 0, 255);
+    color: rgb(166, 0, 255);
+}
+
+.link-github:active {
+    background-color: #4a4a4a;
+    transition: 0.3s;
+    border-color: #4400ff;
+    color: #4400ff;
+}
+
+.link-vivo {
+    font-size: 13px;
+    font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #4a4a4a;
+  color: #f502e4;
+  width: 7rem;
+  height: 2rem;
+  text-align: center;
+  border: 2px solid;
+  border-color: #f502e4;
+  border-radius: 15px;
+}
+
+
+.link-vivo:hover{
+    background-color: #252525;
+    transition: 0.3s;
+    border: 2px solid;
+    border-color: rgb(166, 0, 255);
+    color: rgb(166, 0, 255);
+}
+
+.link-vivo:active {
+    background-color: #4a4a4a;
+    transition: 0.3s;
+    border-color: #4400ff;
+    color: #4400ff;
+}
+
+.web-img {
+    width: 17rem;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    margin: auto;
+    margin-right: 2rem;
+    border-radius: 10px;
+}
+
+
+@media (max-width:761px) {
+
+    #nav {
+        height: 3.5rem;
+    }
+
+    .btn {
+        width: 3rem;
+    }
+
+    #title-1{
+        font-size: 2rem;
+    }
+
+    #title-2 {
+        font-size: 2.5rem;
+    }
+
+    #logo-gato {
+        width: 75%;
+        margin-top: 4rem;
+    }
+
+    #content-my-perfil {
+        padding: 10rem 0 0 0;
+    }
+
+    #me-img {
+        width: 50%;
+    }
+
+    #about-me {
+        padding: 10px 16px;
+        width: 80%;
+        height: 20%;
+    }
+
+    #text-about-me {
+        margin: auto;
+    }
+
+    .html {
+        font-size: 13px;
+        width: 5rem;
+        height: 1,8rem;
+        margin-right: 8rem;
+    }
+
+    .css {
+        font-size: 13px;
+        width: 5rem;
+        height: 1.8rem;
+    }
+    #my-projects {
+        padding: 2rem;
+        padding-left: 1rem;
+    }
+
+    .my-project-1 {
+        margin:  auto;
+        margin-bottom: 2rem;
+        height: 22rem;
+        display: block;
+        width: 100%;
+    }
+
+    .my-project-2 {
+        text-align: center;
+    }
+
+    .links-project {
+        justify-content: space-around;
+    }
+
+    .link-github {
+        font-size: 11px;
+        width: 6rem;
+        height: 1.8rem;
+        margin: 0;
+    }
+
+    .link-vivo {
+        font-size: 11px;
+        width: 6rem;
+        height: 1.8rem;
+        margin: 0;
+    }
+
+    .web-img {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+
