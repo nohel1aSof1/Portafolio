@@ -1,415 +1,311 @@
-body {
-
-    margin: 0;
-    background-color: #252525;
-    height: 100vh;
-}
-
-#nav{
-    height: auto;
-    background-color: #af02f5;
-    height: 4rem;
-    width: 100%;
-    display: flex;
-    top: 0;
-    left: 0;
-    position: fixed;
-    align-items: center;
+*,
+::before
+::after {
     box-sizing: border-box;
-    transition: 0.5s;
-    padding: 0 5%;
-    justify-content: space-between;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+	margin: 0;
+	padding: 0;
 }
 
+body, h2, h3, h1, p {
+    margin: 0;
 
-
-.btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 3.5rem;
-    background-color: #741998;
-    color: #ffffff;
-    border-color: transparent;
-    border-radius: 10px;
-    cursor: pointer;
 }
 
-.btn:hover {
-    background-color: #531356;
-    transition: 0.3s;
-}
-
-.btn:active {
-    background-color: #af02f5;
-    color: #ffffff;
-    transition: 0.3s;
-}
-
-#content-home {
-    height: 90vh;
-    padding: 8rem 0 0 0 ;
-}
-
-#content-title {
-    display: block;
-    text-align: center;
-    font-family: "Archivo Black", sans-serif;
-  font-weight: 400;
+body {
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
   font-style: normal;
+  background-color: #172554;
 }
 
-#title-1 {
-    margin-top: 0;
-    margin-bottom: 0;
-    color:#d269fc;
-    font-size: 3.5rem;
-    text-shadow: 0 0 30px #af02f5;
-}
-
-#title-2 {
-    margin-top: 0;
-    color: #fd98f6;
-    text-shadow: 0 0 30px#f502e4;
-    font-size: 5rem;
-    margin-bottom: 0;
-}
-
-#logo-gato {
-    width: 38%;
-    margin: 0 auto;
-    align-items: center;
-    align-content: center;
+#nav {
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    background-color: #de33ea;
     display: flex;
-}
-
-
-#content-my-perfil {
-    height: 90vh;
-    margin-top: 12rem;
-    text-align: center;
-    padding: 15rem 0 0 0;
-    display: block;
-}
-
-#me-img {
-    width: 34%;
-    margin-bottom: 2rem;
-}
-
-#about-me {
-    background-color:#4e01e6;
+    justify-content: space-between;
+    max-width: 80rem;
     margin: 0 auto;
-    padding: 1rem 3refm;
-    width: 50%;
-    border-radius: 21px;
+    padding: 0 1rem;
     align-items: center;
+    top: 0;
+}
+
+.link {
+    margin: 0 auto; 
+}
+
+#btn-home, #btn-user, #btn-projects {
+    width: 3rem;
+    height: 3rem;
+    color: #fce5fb;
+    margin: 0 auto; 
+    transform: scale(1);
+    transition: all 0.2s ease-in;   
+}
+
+#btn-home:hover, #btn-user:hover, #btn-projects:hover {
+    transform: scale(1.10);
+    color: #ffffff;
+}
+
+
+#home {
+    height: 100vh;
+    text-align: center;
     align-content: center;
-    
+}
+
+#text-home {
+    font-size: 2.2rem;
+    margin-top: 2rem;
+}
+
+#sub-title {
+    color: #ffffff;
+    text-shadow: 0 0 30px #8d01ff;
+}
+
+#title {
+    color: #e5e7eb;
+    text-transform: uppercase;
+    text-shadow: 4px 6px 1px #de33ea;
+}
+
+#gato-logo {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 40%
+}
+
+#phrases {
+    width: 50%;
+    margin: 0 auto;
+    font-weight: 700;
+    text-align: justify;
+    color: #ffffff;
+    padding: 1rem;
+    border:#de33ea 2px solid;
+    border-radius: 1rem;
+}
+
+#text {
+    color: #de33ea;
+}
+
+#my-user {
+    height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+    align-content: center;
+}
+
+#me {
+    margin: 3rem 0 1rem 0;
+    width: 35%;
 }
 
 #text-about-me {
-    font-family: "Arimo", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+    font-weight: 700;
+    background-color: #19295c;
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+    border: #de33ea 2px solid;
+    border-radius: 1rem;
     color: #ffffff;
-    font-size: 17px;
+    margin-bottom: 1.5rem;
 }
 
-#skills {
-    font-family: "League Spartan", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-#title-skills {
-    font-size: 2.5rem;
+#skills-title {
+    text-transform: uppercase;
+    text-shadow: 4px 6px 1px #de33ea;
+    font-size: 1.5rem;
+    font-weight: 900;
     color: #ffffff;
-    margin-bottom: 15px;
 }
 
-#language-project {
-    text-align: center;
-    margin: 2rem;
+#skills-my-perfil {
+    margin: 1rem 0;
+    align-content: space-between;
 }
 
-.html {
-    font-size: 15px;
-    font-family: "Archivo Black", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  background-color: #af02f5;
-  color: #ffffff;
-  width: 6rem;
-  height: 2rem;
-  text-align: center;
-  border-color: transparent;
-  border-radius: 48px;
-  margin: 0 5rem 0 0;
-  cursor: pointer;
-}
-
-.html:hover {
-
-    background-color: rgba(0, 0, 0, 0.062);
-    transition: 0.3s;
-    border: 1px solid;
-    border-color: #af02f5;
-}
-
-.html:active {
-    background-color: #4e01e6;
-    transition: 0.3s;
-}
-
-.css {
-    font-size: 15px;
-    font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    background-color: #af02f5;
-    color: #ffffff;
+.css, .html, .js {
+    border: 0;
+    margin: 0 1rem;
+    background-image: linear-gradient(150deg, #8d01ff, #de33ea, #bc05ff);
+    border-radius: 8px;
     width: 6rem;
-    height: 2rem;
-    text-align: center;
-    border-color: transparent;
-    border-radius: 48px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 4px;
     cursor: pointer;
+    transition: .3s;
 }
 
-.css:hover {
-
-    background-color: rgba(0, 0, 0, 0.062);
-    transition: 0.3s;
-    border: 1px solid;
-    border-color: #af02f5;
+.css:hover, .html:hover, .js:hover {
+    transform: scale(0.9);
 }
 
-.css:active {
-    background-color: #4e01e6;
-    transition: 0.3s;
+#code-stats{
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
 }
 
-#my-projects{
-    text-align: justify;
+#text-code-stats {
+    text-transform: uppercase;
+    text-shadow: 4px 6px 1px #de33ea;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    
+}
+
+#statistics {
+    display: flex;
     margin: auto;
-    margin-top: 5rem;
-    padding: 4rem 6rem 2rem 6rem;
+    gap: 2rem;
+}
+
+.statistics-text {
+    color: #ffffff;
+    margin: 1rem 1rem;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 4px;
+    width: 8rem;
+    background-image: linear-gradient(150deg, #382aff, #9233ea, #ff05ee);
+}
+
+#projects {
+    height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+    align-content: center;
 }
 
 #title-project {
-    font-size: 2rem;
-    font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #f502e4;
-    align-items: center;
-    margin-left: 1rem;
-
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 4px 6px 1px #de33ea; 
+    font-size: 2.5rem;
+    font-weight: 900;
 }
 
 .my-project-1 {
-    background-color: #4a4a4a;
-    padding: 5px 10px;
-    border-radius: 22px;
-    margin: 0 1rem 5rem 1rem;
-    height: 12rem;
+    background-color: #24397f;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 1rem;
+    border: #304ca5 2px solid;
+    border-radius: 18px;
     display: flex;
+    
+}
+
+.my-project-2{
+    display: block;
+    margin: 0 auto;
 }
 
 .title-project {
+    font-size: 25px;
+    font-weight: 700;
     color: #ffffff;
-    font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 4px 1px 1px #de33ea; 
+    margin:  1rem 0;
 }
 
 .text-project {
+    background-color: #304ca5;
+    padding: 5px;
+    border: #8d01ff 2px solid;
+    border-radius: 8px;
     color: #ffffff;
-    font-family: "Arimo", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    margin: 10px 0;
-    background-color: #b002f534;
-    width: 100%;
-    height: 2.5rem;
-    text-align: center;
-    align-content: center;
-    border-radius: 17px;
+    font-weight: 700;
+    margin-bottom: 2rem;
 }
 
-
-.links-project{
-    display: flex;
-    margin: 1rem 0;
+.links-project {
+    margin: 2rem 4rem;
 }
 
-.link-github {
-    font-size: 13px;
-    font-family: "Archivo Black", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  background-color: #4a4a4a;
-  color: #f502e4;
-  width: 7rem;
-  height: 2rem;
-  text-align: center;
-  border: 2px solid;
-  border-color: #f502e4;
-  border-radius: 15px;
-  margin: 0 4rem 0 0;
+.link-github, .link-vivo {
+    width: 7rem;
+    padding: 4px;
+    border: 0;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 800;
+    color: #ffffff;
+    background-image: linear-gradient(150deg, #4400ff, #5a21f8, #8d01ff);
+    margin-right: 3rem;
+    cursor: pointer;
+    transition: .3s;
 }
 
-.link-github:hover{
-    background-color: #252525;
-    transition: 0.3s;
-    border: 2px solid;
-    border-color: rgb(166, 0, 255);
-    color: rgb(166, 0, 255);
-}
-
-.link-github:active {
-    background-color: #4a4a4a;
-    transition: 0.3s;
-    border-color: #4400ff;
-    color: #4400ff;
-}
-
-.link-vivo {
-    font-size: 13px;
-    font-family: "Archivo Black", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  background-color: #4a4a4a;
-  color: #f502e4;
-  width: 7rem;
-  height: 2rem;
-  text-align: center;
-  border: 2px solid;
-  border-color: #f502e4;
-  border-radius: 15px;
-}
-
-
-.link-vivo:hover{
-    background-color: #252525;
-    transition: 0.3s;
-    border: 2px solid;
-    border-color: rgb(166, 0, 255);
-    color: rgb(166, 0, 255);
-}
-
-.link-vivo:active {
-    background-color: #4a4a4a;
-    transition: 0.3s;
-    border-color: #4400ff;
-    color: #4400ff;
+.link-github:hover, .link-vivo:hover {
+    transform: scale(0.9);
 }
 
 .web-img {
-    width: 17rem;
-    align-items: center;
-    align-content: center;
-    display: flex;
-    margin: auto;
-    margin-right: 2rem;
-    border-radius: 10px;
+    width: 30%;
+    border-radius: 8px;
 }
 
-
 @media (max-width:761px) {
-
-    #nav {
-        height: 3.5rem;
-    }
-
-    .btn {
-        width: 3rem;
-    }
-
-    #title-1{
+    #text-home {
         font-size: 2rem;
     }
 
-    #title-2 {
-        font-size: 2.5rem;
+    #gato-logo {
+        width: 60%;
     }
 
-    #logo-gato {
-        width: 75%;
-        margin-top: 4rem;
+    #phrases {
+        width: 70%;
     }
 
-    #content-my-perfil {
-        padding: 10rem 0 0 0;
+    #me {
+        width: 60%;
+        margin: 1rem 0;
     }
 
-    #me-img {
-        width: 50%;
+    #text-about-me  {
+        width: 70%;
     }
 
-    #about-me {
-        padding: 10px 16px;
-        width: 80%;
-        height: 20%;
+    #statistics {
+        gap: 0;
     }
 
-    #text-about-me {
-        margin: auto;
-    }
-
-    .html {
-        font-size: 13px;
-        width: 5rem;
-        height: 1,8rem;
-        margin-right: 8rem;
-    }
-
-    .css {
-        font-size: 13px;
-        width: 5rem;
-        height: 1.8rem;
-    }
-    #my-projects {
-        padding: 2rem;
-        padding-left: 1rem;
+    .statistics-text {
+        padding: 3px;
     }
 
     .my-project-1 {
-        margin:  auto;
-        margin-bottom: 2rem;
-        height: 26rem;
-        display: block;
-        width: 100%;
-    }
-
-    .my-project-2 {
-        text-align: center;
+        width: 80%;
+        height: 30rem;
+        flex-direction: column;
     }
 
     .links-project {
-        justify-content: space-around;
-    }
-
-    .link-github {
-        font-size: 11px;
-        width: 6rem;
-        height: 1.8rem;
-        margin: 0;
-    }
-
-    .link-vivo {
-        font-size: 11px;
-        width: 6rem;
-        height: 1.8rem;
-        margin: 0;
+        margin: 2rem 0;
     }
 
     .web-img {
         width: 70%;
-        margin: auto;
+        margin: 0 auto;
     }
 }
-
 
